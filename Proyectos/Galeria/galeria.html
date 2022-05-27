@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <figure id="logo"><img id='logoImg' src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Converse_logo.svg/2560px-Converse_logo.svg.png"></figure>
+
+        <section id="contenedor-menu">
+            <a href="#contenedor-menu"><img src="img/burger_menu.png" alt="Abrir Menu" id="abrir"></a>
+            <a href="#"><img src="img/cerrar_menu.png" alt="Cerrar menu" id="cerrar"></a>
+    
+            <nav id="nav1">
+                <ul id="contenedor-enlaces">
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Home</li>
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Imagenes</li>
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Comprar</li>
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Blog</li>
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Quienes somos</li>
+                    <li onmouseover="menuColor(this)" onmouseout="menuColor2(this)">Contacto</li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <main>
+        <input type="text" placeholder="Buscar">
+        <nav id="nav2">
+            <ul id="ul2">
+                <li onmouseover="menuColor3(this)">Todos</li><li onmouseover="menuColor3(this)" onmouseout="menuColor4(this)">Naturaleza</li><li onmouseover="menuColor3(this)" onmouseout="menuColor4(this)">Ciudades</li><li onmouseover="menuColor3(this)" onmouseout="menuColor4(this)">Personas</li><li onmouseover="menuColor3(this)" onmouseout="menuColor4(this)">Animales</li>
+            </ul>
+        </nav>
+
+        <section>
+            <figure id="gal">
+                <img src="https://i.pinimg.com/originals/1e/5b/41/1e5b412a7d13d64dd48da626a46c694e.jpg">
+                <img src="https://www.converse.com.ar/wp-content/uploads/2020/03/166800c-300x300.jpg">
+                <img src="https://www.pasittos.com/9870-large_default/zapatillas-converse-lona-star-player-vintage.jpg">
+                <img src="https://media.karousell.com/media/photos/products/2021/3/5/carhartt_wip_x_converse_chuck__1614914642_d808fbe9_progressive.jpg">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_699987-MPE45227932740_032021-W.jpg">
+                <img src="https://images.vans.com/is/image/Vans/VN000D3HY28-HERO?hei=700&wid=700&qlt=85">
+                <img src="https://thumbs.nosto.com/quick/rbxh5h46/8/149947_alt_8a2ae700092ba75f4f905e40be86cbaec315dffa8d0d799abf03ec559a286783/a8ca3046e7c75d083d24307c3bfe0bf028a698b769bd9359f813695138e02d06a/A">
+                <img src="https://ferreira.vteximg.com.br/arquivos/ids/353338-588-588/vn_VN000XB0D8F_4.jpg">
+            </figure>
+        </section>
+    </main>
+<script src="js/gallery.js"></script>    
+</body>
+</html>

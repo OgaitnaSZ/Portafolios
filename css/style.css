@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: quicksand;
+    background-color: antiquewhite;
+}
+header{
+    height: 30%;
+    background-color: #1c1d1f;
+    color: white;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+    padding: 1em;
+    font-size: 2.4em;
+}
+nav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    margin: 0.2em;
+    padding: 0.8em;
+    border: 1px solid black;
+    list-style: none;
+}
+li:hover{
+    border: 1px solid white;
+    background-color: black;
+    font-weight: 800;
+}
+#contact{
+    float: right;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+li a:hover{
+    color:white;
+}
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+section{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+figure{
+    margin-top: 2em;
+    opacity: 0.5;
+}
+figure img{
+    width: 4%;
+    padding: 0.4em;
+}
+footer{
+    padding: 1.5em;
+    background-color: #1c1d1f;
+    color: #fff;
+    text-align: center;
+}
+
+/* Proyectos.html */
+
+#mainP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+aside{
+    height: 100%;
+    width: 12%;
+    padding: 1em;
+    background-color: #1c1d1f;
+    color: white;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+}
+aside ul li{
+    border: 1px solid white;
+}
+aside ul li:hover{
+    border: 1px solid black;
+    color:black;
+    background-color: white;
+    font-weight: 800;
+}
+#mainP section{
+    width: 87%;
+    border: 1px solid black;
+    background-position-x: 50%;
+}
+#PL{
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+#PL a{
+    text-decoration: none;
+    padding: 0.2em;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+#PL a:hover{
+    color: #1ca591;
+    border: 1px solid #1ca591;
+}
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background: none;
+}
+#h2P{
+    background-color: transparent;
+    margin:0;
+    padding:1em;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+#cerrar{
+    width: 1.2em;
+    margin-top: 1em;
+    color:crimson;
+    font-weight: bolder;
+    font-size: 1.4em;
+    border-radius: 100px;
+}
+
+/* Contacto */
+#sectContact{
+    color: black;
+    width: 20%;
+}
+#sectContact article{
+    height: auto;
+    width: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#sectContact article a{
+    color: black;
+    font-weight: bolder;
+    margin-left: 0.1em;
+}
+#sectContact article p{
+    color: black;
+    padding: 0.2em;
+}
+
+/* Responsive */
+
+@media all and (max-width: 600px){
+    h1{
+        margin:0;
+        padding:0;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        width: 100%;
+        font-size: 2em;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 92%;
+    }
+    li{
+        width: 100%;
+    }
+    main section{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    main section h2{
+        font-size: 3em;
+    }
+    main section p{
+        font-size: 1.1em;
+    }
+    figure{
+        width: 100%;
+    }
+    figure img{
+        width: 12%;
+    }
+
+    #mainP{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    aside{
+        margin:0;
+        padding:0;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        width: 100%;
+        height: auto;
+    }
+
+    aside ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    aside ul li{
+        width: auto ;
+    }
+
+    #mainP section{
+        width: 100%;
+    }
+    #art{
+        height:100%;
+    }
+    #h2P{
+        display: none;
+    }
+    #PT{
+        font-size: 2.5em;
+    }
+
+    #mainContact{
+        height: auto;
+    }
+    #sectContact{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        padding-bottom: 10%;
+    }
+    #sectContact h2{
+        font-size: 2.6em;
+    }
+    #sectContact article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sectContact article p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1em;
+    }
+}
+
+@media all and (min-width: 600px){
+    aside{
+        width: 24%;
+    }
+}
+
+@media all and (min-width: 1000px){
+    aside{
+        width: 12%;
+    }
+}
