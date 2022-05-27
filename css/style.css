@@ -11,7 +11,6 @@ header{
     height: 30%;
     background-color: #1c1d1f;
     color: white;
-    padding: 1em;
 }
 h1{
     text-align: center;
@@ -19,6 +18,7 @@ h1{
     font-size: 2.4em;
 }
 nav{
+    padding: 0.2em;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -28,9 +28,11 @@ ul{
     flex-direction: row;
 }
 li{
-    margin: 0.2em;
-    padding: 0.8em;
+    margin: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     border: 1px solid black;
+    border-radius: 90px;
     list-style: none;
 }
 li:hover{
@@ -45,8 +47,10 @@ li a{
     text-decoration: none;
     color: black;
     font-weight: 800;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 li a:hover{
     color:white;
@@ -79,6 +83,7 @@ figure img{
 }
 footer{
     padding: 1.5em;
+    margin-top: 3em;
     background-color: #1c1d1f;
     color: #fff;
     text-align: center;
@@ -95,6 +100,7 @@ aside{
     height: 100%;
     width: 12%;
     padding: 1em;
+    margin-top: 2em;
     background-color: #1c1d1f;
     color: white;
 }
@@ -160,6 +166,21 @@ article{
     border-radius: 100px;
 }
 
+#bton{
+    text-decoration: none;
+    color: #1ca591;
+    font-size: 1.5em;
+    border: #1ca591 2px solid;
+    background-color: #fff;
+    border-radius: 1000px;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
+
 /* Contacto */
 #sectContact{
     color: black;
@@ -201,14 +222,23 @@ article{
         text-align: center;
     }
     ul{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        width: 92%;
+        display: inline-block;
+        width: auto;
     }
-    li{
+    #ul2{
+        display: flex;
+        flex-direction: column;
         width: 100%;
+    }
+    #contact{
+        float: none;
+    }
+    li a{
+        padding-left: 40%;
+        padding-right: 40%;
+        margin: 0 auto;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
     }
     main section{
         width: 90%;
@@ -251,6 +281,7 @@ article{
     }
     aside ul li{
         width: auto ;
+        padding: 0.4em;
     }
 
     #mainP section{
