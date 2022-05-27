@@ -124,14 +124,18 @@ aside ul li:hover{
 #PL{
     font-size: 1.2em;
     margin-top: 2em;
+    text-shadow: 1px 1px 4px black;
 }
-
+#PT{
+    text-shadow: 1px 1px 4px black;
+}
 #PL a{
     text-decoration: none;
     padding: 0.2em;
     color: white;
     border: 1px solid white;
     border-radius: 100px;
+    text-shadow: 1px 1px 4px black;
 }
 #PL a:hover{
     color: #1ca591;
@@ -156,6 +160,9 @@ article{
     letter-spacing: 2px;
     font-size: 2em;
 }
+#PD{
+    text-shadow: 1px 1px 4px black;
+}
 #cerrar{
     width: 1.2em;
     margin-top: 1em;
@@ -163,6 +170,7 @@ article{
     font-weight: bolder;
     font-size: 1.4em;
     border-radius: 100px;
+    text-shadow: 1px 1px 4px black;
 }
 
 #bton{
