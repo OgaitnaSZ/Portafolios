@@ -118,7 +118,6 @@ aside ul li:hover{
 }
 #mainP section{
     width: 87%;
-    border: 1px solid black;
     background-position-x: 50%;
 }
 #PL{
@@ -362,7 +361,7 @@ article{
     aside{
         width: 24%;
     }
-    #abrir, #cerrarMenu{
+    #abrir, #cerrarMenu, #bton{
         display: none;
     }
 }
@@ -371,7 +370,7 @@ article{
     aside{
         width: 15%;
     }
-    #abrir, #cerrarMenu{
+    #abrir, #cerrarMenu, #bton{
         display: none;
     }
 }
