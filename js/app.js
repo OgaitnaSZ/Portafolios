@@ -74,7 +74,7 @@ function mostrar4(){
     document.getElementById('h2P').innerHTML = '';
     document.getElementById('PT').innerHTML = 'Generador de Bloques';
     document.getElementById('PD').innerHTML = 'Aplicacion que genera bloques de color aleatorio con un solo click';
-    document.getElementById('PL').innerHTML = '<a href="../Proyectos/Generador de Bloques/generador de bloques.html" Target="_blank">Ver Proyecto</a>';
+    document.getElementById('PL').innerHTML = '<a href="../Proyectos/Generador de bloques/generador de bloques.html" Target="_blank">Ver Proyecto</a>';
     document.getElementById('cerrar').innerHTML = 'X';
 }
 
