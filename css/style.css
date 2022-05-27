@@ -124,11 +124,11 @@ aside ul li:hover{
 #PL{
     font-size: 1.2em;
     margin-top: 2em;
+}
+#PT, #PD{
     text-shadow: 1px 1px 4px black;
 }
-#PT{
-    text-shadow: 1px 1px 4px black;
-}
+
 #PL a{
     text-decoration: none;
     padding: 0.2em;
@@ -159,9 +159,6 @@ article{
     font-weight: bolder;
     letter-spacing: 2px;
     font-size: 2em;
-}
-#PD{
-    text-shadow: 1px 1px 4px black;
 }
 #cerrar{
     width: 1.2em;
@@ -284,10 +281,9 @@ article{
     aside ul{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
     }
     aside ul li{
-        width: auto ;
+        width: 0 auto ;
         padding: 0.4em;
     }
 
@@ -327,16 +323,55 @@ article{
         align-items: center;
         padding-top: 1em;
     }
+    #contenedor-menu #cerrarMenu{
+        display: none;
+    }
+    #contenedor-menu #contenedor-enlaces{
+        height:0;
+        transition: height 0.5s ease;
+        overflow: hidden;
+    }
+    #contenedor-menu:target #abrir{
+        display: none;
+    }
+    #contenedor-menu:target #cerrarMenu{
+        display: block;
+    }
+    #contenedor-menu:target #contenedor-enlaces{
+        height: 50vh;
+        transition: height 0.5s ease;
+    }
+    #contenedor-enlaces{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menD{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 0.2em;
+    }
+    
+    #ft{
+        display: none;
+    }
 }
 
 @media all and (min-width: 600px){
     aside{
         width: 24%;
     }
+    #abrir, #cerrarMenu{
+        display: none;
+    }
 }
 
 @media all and (min-width: 1500px){
     aside{
         width: 15%;
+    }
+    #abrir, #cerrarMenu{
+        display: none;
     }
 }
