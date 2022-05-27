@@ -335,8 +335,8 @@ article{
     }
 }
 
-@media all and (min-width: 1000px){
+@media all and (min-width: 1500px){
     aside{
-        width: 12%;
+        width: 15%;
     }
 }
