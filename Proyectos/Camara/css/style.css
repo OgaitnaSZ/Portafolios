@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+  }
+
+@media all and (max-width: 1024px){
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #sect1{
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        font-size:1em;
+        padding: 1em;
+    }
+    .video-wrap{
+        width: 100%;
+    }
+    #video{
+        width: 100%;
+    }
+    #sect2{
+        width: 100%;
+    }
+    #canvas{
+        width: 80%;
+        padding-left: 10%;
+    }
+}
+
+@media all and (min-width: 1024px){
+
+  main{
+      width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fafafa;
+  }
+  #sect1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 48%;
+  }
+  button{
+    padding: 1em;
+    margin: 1em;
+  }
+  #sect2{
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #canvas{
+    padding-top: 26%;
+  }
+}

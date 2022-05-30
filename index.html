@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" id="htmlMain">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolios</title>
+    <meta name="author" content="Santiago Zelaya">
+    <meta name="description" content="Portafolios de proyectos de desarrollador web">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favico.png" size="32x32">
+</head>
+
+<body id="bodyMain">
+    <header id="hMain" style="position: fixed;">
+        <nav>
+            <ul id="ulMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#sectionMain2">Sobre mi</a></li>
+                <li><a href="html/proyectos.html">Proyectos</a></li>
+            </ul>
+        </nav>
+        <figure id="logo"><img src='img/logo_large.png'></figure>
+        <ul id="ulMenu2">
+            <li><a href="html/contacto.html" id="contact">Contacto</a></li>
+        </ul>
+        <figure id="logoMob"><img src='img/logo_large.png'></figure>
+    </header>
+
+    <main id="mainMain">
+        <section id="sectionMain">
+            <section id="sectionMain1">
+                <article>
+                    <h1>SanZ</h1>
+                    <br>
+                    <p>Les presento mi portafolios de proyectos donde aplique varios conceptos de mi aprendizaje</p>
+                    <figure id="sectFigure">
+                        <img src="img/html.png">
+                        <img src="img/css.png">
+                        <img src="img/js.png">
+                        <img src="img/php.png">
+                        <img src="img/c.png">
+                    </figure>
+                </section>
+                </article>
+            <section id="sectionMain2">
+                <article>
+                    <h1>Presentacion</h1>
+                    <p>Mi nombre es Santiago Zelaya, soy estudiante de Programacion de la Universidad Nacional de Tucuman en la Facultad de Ciencias Exactas y Tecnologia.</p> 
+                    <br>
+                    <p>Además estudio cursos y lenguajes de programacion de manera independiente.</p>
+                </article>
+            </section>
+        </section>
+        <a id="bton" href="#">↑</a>
+    </main>
+</body>
+
+<script>
+        window.addEventListener('scroll', function(event){
+    let scroll = this.scrollY;
+    if(scroll > 0){
+        console.log('scroll');
+        document.getElementById('bton').style.display = 'block';
+        document.getElementById('hMain').style.backgroundColor = 'white';
+        document.getElementById('ulMenu').innerHTML = `
+            <li><a class="liMain" href="#">Home</a></li>
+            <li><a class="liMain" href="#sectionMain2">Sobre mi</a></li>
+            <li><a class="liMain" href="html/proyectos.html">Proyectos</a></li>
+            `;
+        document.getElementById('ulMenu2').innerHTML = `
+        <li><a href="html/contacto.html" class="liMain2">Contacto</a></li>
+        `;
+        document.getElementById('logoMob').innerHTML='';
+    }
+    else{
+        console.log('no scroll');
+        document.getElementById('bton').style.display = 'none';
+        document.getElementById('hMain').style.backgroundColor = 'transparent';
+        document.getElementById('ulMenu').innerHTML = `
+            <li><a href="#">Home</a></li>
+            <li><a href="#sectionMain2">Sobre mi</a></li>
+            <li><a href="html/proyectos.html">Proyectos</a></li>
+            `;
+        document.getElementById('ulMenu2').innerHTML = `
+        <li><a href="html/contacto.html" id="contact">Contacto</a></li>
+        `;
+        document.getElementById('logoMob').innerHTML='<img src="img/logo_large.png">';
+        }
+    }
+    );
+</script>
+</html>
