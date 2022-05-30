@@ -401,7 +401,8 @@ aside ul li:hover{
         width: 100%;
     }
     aside{
-        padding: 1em;
+        padding-bottom: 1em;
+        padding-top:1em;
         width: 100%;
     }
     /* Burguer Menu */
