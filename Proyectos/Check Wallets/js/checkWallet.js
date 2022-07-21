@@ -60,6 +60,7 @@
  function modoOscuro() {
      window.document.body.style.backgroundColor = "#202124";
      window.document.body.style.color = "white";
+     document.getElementById('pp').style.color = 'black';
  }
 
  function modoClaro() {
