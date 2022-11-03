@@ -36,7 +36,7 @@ nav{
     margin-left: auto;
 }
 #logoLink{
-    width: 33.3%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -63,7 +63,7 @@ nav{
     justify-content: center;
 }
 #logo img{
-    width: 15%;
+    width: 25%;
 }
 
 /* Home Page */
