@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Art</title>
+    <meta name="author" content="Santiago Zelaya">
+    <link rel="icon" type="image/png" href="favico.png" size="32x32">
+</head>
+<body onload="fMain()">
+    <aside>
+        <article id="menu">
+            <p>Tamaño:</p>
+            <label><input type="radio" name="tam" id="t10"> 10x10</label>
+            <label><input type="radio" name="tam" id="t20"> 20x20</label>
+            <br> 
+            <p>Cuadricula:</p>
+            <label><input type="radio" name="cua" id="qsi" checked> Si</label>
+            <label><input type="radio" name="cua" id="qno"> No</label>
+            <br> 
+            <p>Color:</p>
+            <div id="colorSelector">
+                <input type="color" id="color">
+                <figure><img src="eraser.png" id="borrador"></figure>
+            </div>
+            <br> 
+            <p>Tamaño de cada pixel</p>
+            <input type="range" min="30" max="50" step="10" id="rango">
+            <br> 
+            <p>Zoom</p>
+            <input type="range" min="0.1" max="1.5" step="0.1" id="zoom">
+        </article>
+    </aside>
+    <main>
+        <h1 id="title">Selecciona el tamaño</h1>
+        <section id="plantilla"></section>
+        <label id="labelDes">
+        <input type="text" name="nombre" id="nombreDibujo" placeholder="Nombre de tu dibujo:">
+        <button type="button" id="bton">Descargar</button>
+        </label>
+        <h2 id="mensaje">¡Comienza a dibujar Aqui!</h2>
+        <section id="loading">
+            <h1>Pixel ART</h1>
+            <img src="loading.gif">
+            <article id="barExt"><article id="barInt"></article></article>
+            <article id="porcentaje"><p>Loading... </p><p id="bar"></p></article>
+        </section>
+    </main>
+</body>
+</html>
+<script src="app.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>

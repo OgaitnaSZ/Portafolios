@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicacion Camara</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section id="sect1">
+      <!-- Iniciar camara -->
+      <article class="video-wrap">
+        <video id="video" playsinline autoplay></video>
+      </article>
+
+      <!-- Boton para capturar foto -->
+      <article class="controller">
+        <button id="snap">Capture</button>
+      </article>
+    </section>
+
+    <!-- Mostrar foto -->
+    <section id="sect2">
+      <p id="cerrar">X</p>
+      <canvas id="canvas" width="800" height="800"></canvas>
+    </section>
+
+  </main>
+  <script src="js/app.js"></script>  
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Preguntas y respuestas</title>
+</head>
+<body>
+    <section id="sect0">
+        <article id="art0">
+        <h2 id="h2P">Preguntas Frecuentes</h2>
+        </article>
+        <article id="art1">
+        <hr class="hrA">
+        <div>
+            <a href="#h2P" class="aP"><h3 id="h3p">¿Pregunta 1?</h3></a>
+            <a href="#h2P" class="aP"><h3 id="h3p0"></h3></a>
+            <p id="pp"></p>
+        </div>
+        <hr class="hrA">
+        <div>
+            <a href="#h2P" class="aP"><h3 id="h3p1">¿Pregunta 2?</h3></a>
+            <a href="#h2P" class="aP"><h3 id="h3p01"></h3></a>
+            <p id="pp1"></p>
+        </div>
+        <hr class="hrA">
+        <div>
+            <a href="#h2P" class="aP"><h3 id="h3p2">¿Pregunta 3?</h3></a>
+            <a href="#h2P" class="aP"><h3 id="h3p02"></h3></a>
+            <p id="pp2"></p>
+        </div>
+        <hr class="hrA">
+        <div>
+            <a href="#h2P" class="aP"><h3 id="h3p3">¿Pregunta 4?</h3></a>
+            <a href="#h2P" class="aP"><h3 id="h3p03"></h3></a>
+            <p id="pp3"></p>
+        </div>
+        <hr class="hrA">
+        </arcticle>   
+    </section>
+        
+    <style>
+        body{
+            background-color: #fafafa;
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hrA{
+        border:none;
+        color:gray;
+        height: 2.2px;
+        background: #ececec;
+        border-radius:100px;
+        }
+        #sect0{
+        width: 60%;
+        background: white;
+        padding:1em;
+        border-radius: 20px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+        }
+        #art0{
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #art0 h2{
+        font-family: quicksand;
+        font-size: 2em;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        }
+        #h2P::after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.2em;
+            background-color: #d2ae36;
+            margin: 0 auto;
+        }
+
+        #art1{
+            text-align:start;
+        width: 90%;
+        margin-left:5.5%;
+        }
+        #art1 h3{
+            font-family:quicksand;
+        font-size: 1.3em;
+        }
+        .aP{
+            text-decoration: none;
+            color:black;
+        }
+        div p{
+            font-family: quicksand;
+        }
+            @media all and (max-width:500px) {
+            #art0 h2{
+            font-size: 2em;
+            width:100%;
+            margin:0;
+            margin-bottom: 0.8em;
+            }
+            #sub{
+            width: 60%;
+            margin-left: 20%;
+            }
+            #art1 h3{
+            font-size: 1.2em;
+            }
+        }
+    </style>  
+    <script>
+    //Inicio bloque
+    document.getElementById('h3p').addEventListener('click', mostrar);
+    function mostrar(){
+        document.getElementById('pp').innerHTML = 'La empresa es un portal inmobiliario, es decir, es el punto de encuentro perfecto  entre quienes ofrecen sus propiedades y quienes las están buscando.';
+        document.getElementById('h3p').innerHTML = '';
+        document.getElementById('h3p0').innerHTML = '¿Pregunta 1?';
+    }
+    document.getElementById('h3p0').addEventListener('click', mostrar0);
+    function mostrar0(){
+        document.getElementById('pp').innerHTML = '';
+        document.getElementById('h3p0').innerHTML = '';
+        document.getElementById('h3p').innerHTML = '¿Pregunta 1?';
+    }
+    //Fin bloque
+
+    //Inicio bloque
+    document.getElementById('h3p1').addEventListener('click', mostrar1);
+    function mostrar1(){
+        document.getElementById('pp1').innerHTML = 'Si, puedes probar la plataforma durante un mes completamente  gratis.';
+        document.getElementById('h3p1').innerHTML = '';
+        document.getElementById('h3p01').innerHTML = '¿Pregunta 2?';
+    }
+    document.getElementById('h3p01').addEventListener('click', mostrar01);
+    function mostrar01(){
+        document.getElementById('pp1').innerHTML = '';
+        document.getElementById('h3p01').innerHTML = '';
+        document.getElementById('h3p1').innerHTML = '¿Pregunta 2?';
+    }
+    //Fin bloque
+
+    //Inicio bloque
+    document.getElementById('h3p2').addEventListener('click', mostrar2);
+    function mostrar2(){
+        document.getElementById('pp2').innerHTML = 'Si eres un agente o inmobiliaria y quieres que tus propiedades sean vistas por  personas interesadas en Real Estate, este es el lugar indicado.<br>También tenemos planes para particulares que quieran promocionar su propia propiedad dentro de la plataforma.';
+        document.getElementById('h3p2').innerHTML = '';
+        document.getElementById('h3p02').innerHTML = '¿Pregunta 3?';
+    }
+    document.getElementById('h3p02').addEventListener('click', mostrar02);
+    function mostrar02(){
+        document.getElementById('pp2').innerHTML = '';
+        document.getElementById('h3p02').innerHTML = '';
+        document.getElementById('h3p2').innerHTML = '¿Pregunta 3?';
+    }
+    //Fin bloque
+
+    //Inicio bloque
+    document.getElementById('h3p3').addEventListener('click', mostrar3);
+    function mostrar3(){
+        document.getElementById('pp3').innerHTML = 'Con nuestros planes de pago podrás aumentar el alcance destacando tu propiedad para que esté dentro de las primeras páginas. La cantidad de propiedades destacadas depende del plan que elijas.';
+        document.getElementById('h3p3').innerHTML = '';
+        document.getElementById('h3p03').innerHTML = '¿Pregunta 4?';
+    }
+    document.getElementById('h3p03').addEventListener('click', mostrar03);
+    function mostrar03(){
+        document.getElementById('pp3').innerHTML = '';
+        document.getElementById('h3p03').innerHTML = '';
+        document.getElementById('h3p3').innerHTML = '¿Pregunta 4?';
+    }
+    //Fin bloque
+    </script>
+</body>
+</html>    
