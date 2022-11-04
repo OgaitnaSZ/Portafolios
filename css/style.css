@@ -230,6 +230,7 @@ section.efectoCuadro:hover section::after{
 #sectionMain2 h1{
     font-size: 3em;
     color: white;
+    text-align: center;
 }
 #sectionMain2 p{
     font-size: 1.2em;
