@@ -106,6 +106,9 @@ button:hover{
         position: relative;
         margin: 0;
     }
+    main{
+        width:90%;
+    }
     section{
         width: 100%;
     }
