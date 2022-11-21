@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Generador de gradientes</title>
+    <meta name="author" content="Santiago Zelaya">
+</head>
+<body onload="fmain()">
+    <aside>
+        <article id="menu">
+            <article class="option">
+                <p>Tipo de Degradado:</p>
+                <label><input type="radio" checked name="deg" id="degLi">Lineal</label>
+                <label><input type="radio" name="deg" id="degRa">Radial</label>
+            </article>
+            <article class="option">
+                <p>Tamaño:</p>
+                <label>Ancho:<input type="number" id="ancho" class="inputNumber" max="2000" min="0" value="600" step="10">px</label>
+                <label>Alto:<input type="number" id="alto" class="inputNumber" max="2000" min="0" value="200" step="10">px</label>
+            </article>
+            <article class="option" id="colorSelector">
+                <label>
+                    <p>Color 1:</p>
+                    <input type="color" id="color1" value="#d9a985">
+                </label>
+                <label>
+                    <p>Color 2:</p>
+                    <input type="color" id="color2" value="#85b5d9">
+                </label>
+            </article>
+            <article class="option" id="Ori">
+                <p>Orientacion:</p>
+                <label>
+                    <input type="number" id="orientacion" class="inputNumber" min="-360" max="360" value="30">°
+                </label>
+            </article>
+            <article class="option">
+            <p>Nivel de Degradado:</p>
+            <label>
+                <input type="range" id="zoom" min="0" max="50" value="0" step="10">%
+            </label>
+            </article>
+        </article>
+    </aside>
+    <main>
+        <section id="imagen"></section>
+        <button type="button" id="bton">Descargar</button>
+    </main>
+</body>
+</html>
+<script src="app.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
